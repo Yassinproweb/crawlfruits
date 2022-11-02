@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" href="/svgs/apple-whole.svg" type="image/x-icon">
+
+    <!-- Link To CSS Stylesheet -->
+    <link rel="stylesheet" href="dist/main.css">
+
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Page Title -->
+    <title>Crawl Grocery</title>
+</head>
+<body>
+    <nav class="fixed bg-transparent w-full flex items-center justify-between px-7 py-3 lg:px-20 xl:px-24">
+        <h3 class="text-xl text-light text-start font-bold">Crawl <span class="text-orange">Grocery</span></h3>
+
+        <button class="menu-btn lg:hidden">
+            <img src="/svgs/open.svg"  class="w-7 openBtn">
+            <img src="/svgs/close.svg"  class="hidden w-7 closeBtn">
+        </button>
+
+        <div id="menu" class="absolute hidden right-3.5 top-16 bg-green rounded-lg w-fit flex-col gap-1.5 px-7 py-9 items-center justify-center lg:flex lg:flex-row lg:top-0 lg:relative lg:right-0 lg:bg-transparent lg:p-0 lg:gap-x-7">
+            <a href="#" class="text-light text-base font-normal text-center hover:text-orange">Home</a>
+            <a href="#about" class="text-light text-base font-normal text-center hover:text-orange">About</a>
+            <a href="#stock" class="text-light text-base font-normal text-center hover:text-orange">Store</a>
+            <a href="#farm" class="text-light text-base font-normal text-center hover:text-orange">Farm News</a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative w-full flex flex-col-reverse items-center justify-center lg:flex-row lg:h-screen">
+        <div class="relative w-full bg-green flex flex-col items-start justify-center gap-2 h-fit px-7 py-5 sm:pl-20 sm:py-12 lg:h-full lg:px-32">
+            <h5 class="text-orange text-lg text-start max-w-xs font-medium">Welcome to Crawl Fruits</h5>
+            <h3 class="text-light text-3xl font-bold capitalize max-w-xs">Fresh produce every single week</h3>
+            <p class="text-light text-start text-base font-normal max-w-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque quis tempore aut nesciunt perspiciatis, blanditiis quidem quisquam aperiam earum similique voluptas sint est ipsam repellendus dolor nemo ea facilis.</p>
+            <button class="text-base text-colbtn mt-1 bg-transparent px-5 py-2 capitalize home-btn">Customise your box</button>
+        </div>
+        <div class="relative w-full h-fit px-7 py-24 home-fruit sm:pl-20 lg:h-full">
+            <div class="w-52 h-fit px-3.5 pt-4 pb-7 flex flex-col rounded items-start justify-start bg-orange lg:w-64 lg:py-11 lg:px-7 fruit-choose">
+                <h3 class="text-light text-xl font-bold text-start">What We Offer?</h3>
+                <ul class="w-full flex flex-col items-start justify-start">
+                    <li class="text-light text-base font-normal text-start">1. Fresh Fruits & Vegetables.</li>
+                    <li class="text-light text-base font-normal text-start">2. Free Product Packaging.</li>
+                    <li class="text-light text-base font-normal text-start">3. Fast Delivery To All.</li>
+                </ul>
+                <button class="text-green text-base mt-3 bg-transparent self-center justify-self-center px-3.5 py-1 order-btn">Order Now</button>
+            </div>
+            <div class="hidden w-56 absolute h-48 fruit-choose bg-light left-40 rounded mt-5 lg:block overflow-hidden">
+                <p class="text-green text-base text-start font-bold capitalize mt-5 ml-5">Try Our fruits</p>
+                <p class="text-orange text-start text-base font-normal mx-5">We have the best you are yet to taste. <b class="text-green">Yummy!!</b></p>
+                <img src="/images/salad-cut.png" class="w-36 object-cover translate-x-1/2 translate-y-1/5 object-left">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="w-full flex flex-col items-center justify-center gap-5 px-5 py-9 bg-light sm:px-16">
+        <div class="w-full flex flex-col items-center justify-center gap-3 max-w-md">
+            <h3 class="text-transparent text-xl text-start w-full font-bold about-title">About Us</h3>
+            <p class="text-green text-start font-normal text-base w-full -mt-2">
+                We are a grocery store that connects you to fruits & vegetables farmers all around East Africa. We help deliver high quality fresh farm produce in time all seasons all year-long.
+            </p>
+            <p class="text-orange text-start font-normal text-base w-full -mt-2">
+                We are trusted by over thirty thousand (30k) farmers and we have delivered quality to over forty five million (45M) people and stores in East Africa.
+            </p>
+            <p class="text-green text-start font-normal text-base w-full -mt-2">
+                We have won over <span class="text-orange font-bold">13 Gold Medals</span> and have been honored <span class="text-orange font-bold">3 Times</span> to supply fruits and vegetables during the <span class="font-bold">East African Community Presidential Assembly</span>.
+            </p>
+        </div>
+
+        <h2 class="text-2xl text-green text-center font-bold">How it Works</h2>
+
+        <div class="w-fit flex flex-col items-center justify-center gap-5 px-5 lg:flex-row">
+            <div class="w-52 h-32 flex flex-col gap-3 items-center justify-center work-fruits">
+                <img src="/svgs/box.svg" class="w-11">
+                <p class="text-sm text-origt text-center font-normal">Choose your Package</p>
+            </div>
+            <div class="w-52 h-32 flex flex-col gap-3 items-center justify-center work-fruits">
+                <img src="/svgs/calendar.svg" class="w-11">
+                <p class="text-sm text-green text-center font-normal">Choose Delivery Threshold</p>
+            </div>
+            <div class="w-52 h-32 flex flex-col gap-3 items-center justify-center work-fruits">
+                <img src="/svgs/time.svg" class="w-11">
+                <p class="text-sm text-orange text-center font-normal">Choose Assessment Time</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="stock" class="relative w-full flex flex-col items-center justify-center gap-5 px-5 py-9 bg-light sm:px-16 lg:px-32">
+        <div class="relative w-full flex flex-col justify-center items-start gap-3 md:w-fit md:grid md:grid-cols-2">
+            <div class="w-64 px-5 py-7 flex flex-col items-start justify-center bg-orange gap-2.5 card">
+                <h3 class="text-xl text-light font-bold text-start">Why Crawl Grocery?</h3>
+                <p class="text-light text-start font-normal text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ex provident fugit in voluptates et officia tenetur?</p>
+                <p class="text-base font-normal text-light text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, corporis? Ab incidunt quis sequi explicabo, deleniti dolor ad laboriosam non quas, sint voluptatum.</p>
+            </div>
+            <button class="text-colbtn text-base font-bold px-5 py-2 bg-transparent stock">Purchase Now</button>
+            <div class="w-64 self-end card-fruit h-96"></div>
+        </div>
+        <div class="w-full flex flex-col items-center justify-center gap-2 lg:w-fit">
+            <h3 class="text-2xl text-center text-orange font-bold mt-3">Pick Your Package</h3>
+            <div id="scroller" class="w-full flex items-center justify-between overflow-auto gap-5 card-scroll">
+                <div class="w-56 flex flex-col items-center justify-center gap-2 p-5 flex-shrink-0 fruit-card">
+                    <img src="/images/fruit-bowl.jpeg" class="w-full">
+                    <h5 class="text-green text-xl font-bold text-center">Winter Fruits</h5>
+                    <p class="text-green text-base text-center font-normal">European Seasonal Berries, $73/Pack</p>
+                    <button class="text-light font-normal bg-green px-5 py-2 purchase">Buy Now</button>
+                </div>
+                <div class="w-56 flex flex-col items-center justify-center gap-2 p-5 flex-shrink-0 fruit-card">
+                    <img src="/images/fruit-citrus.jpeg" class="w-full">
+                    <h5 class="text-green text-xl font-bold text-center">Citrus Fruits</h5>
+                    <p class="text-green text-base text-center font-normal">Vitamin A & C Rich Fruits, $67/Pack</p>
+                    <button class="text-light font-normal bg-green px-5 py-2 purchase">Buy Now</button>
+                </div>
+                <div class="w-56 flex flex-col items-center justify-center gap-2 p-5 flex-shrink-0 fruit-card">
+                    <img src="/images/fruit-veg.jpeg" class="w-full">
+                    <h5 class="text-green text-xl font-bold text-center">Doctor's Salad</h5>
+                    <p class="text-green text-base text-center font-normal">Prophet's Salad Figs & Olives Added, $139/Pack</p>
+                    <button class="text-light font-normal bg-green px-5 py-2 purchase">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="farm" class="relative w-full flex flex-col items-center justify-center gap-5 px-5 py-9 bg-light sm:px-16">
+        <h3 class="text-2xl text-center text-green font-bold">Why Not Subscribe To Our Newsletter?</h3>
+        <p class="text-green text-lg text-center font-normal max-w-lg">We humbly request & advise you to subscribe to our <b class="text-orange">Newsletter</b> for more information about <b>fruits</b> and <b>vegetables</b>.</p>
+        <div class="relative w-full bg-green flex flex-col items-center justify-center gap-3 px-5 py-11 rounded-md overflow-hidden max-w-xs">
+            <img src="/images/salad-cut.png" class="absolute w-48 object-cover imgsub">
+            <input type="email" class="w-full text-green text-base px-3 py-2 outline-none placeholder:text-griht placeholder:opacity-75" placeholder="Enter your email">
+            <input type="password" class="w-full text-green text-base px-3 py-2 outline-none placeholder:text-griht placeholder:opacity-75" placeholder="Enter your password">
+            <button class="text-colbtn text-base font-bold w-full py-2 subbtn">Subscribe Now</button>
+        </div>
+    </section>
+
+    <footer id="footer" class="relative w-full flex flex-col gap-5 bg-orange items-center justify-center px-5 py-9 sm:px-9 md:px-20 lg:px-32">
+        <div class="w-full flex flex-col gap-5 lg:flex-row lg:justify-between">
+            <div class="w-full flex flex-col items-start justify-center gap-5 max-w-md">
+                <h3 class="text-light text-2xl text-start font-bold">Get your First Package <b class="text-green">Free Delivered!</b></h3>
+                <p class="text-light text-base text-start font-normal">Consequuntur, veritatis. Tempore, minima laborum? Ipsam doloribus vero exercitationem alias incidunt.</p>
+                <button class="text-colbtn text-base bg-transparent font-bold px-5 py-2 footer-btn">Purchase Now</button>
+            </div>
+            <div class="w-full flex flex-col items-center justify-center gap-5 lg:w-fit">
+                <h3 class="text-xl font-bold text-green text-start w-full">Crawl Grocery</h3>
+                <div class="w-full flex flex-col gap-1 items-start justify-center -mt-5">
+                    <a href="#" class="text-light text-base text-start font-normal hover:text-griht">Home</a>
+                    <a href="#" class="text-light text-base text-start font-normal hover:text-griht">Store</a>
+                    <a href="#" class="text-light text-base text-start font-normal hover:text-griht">Terms & Conditions</a>
+                    <a href="#" class="text-light text-base text-start font-normal hover:text-griht">Policy</a>
+                    <a href="#" class="text-light text-base text-start font-normal hover:text-griht">Offers</a>
+                </div>
+                <div class="w-full flex items-center justify-center gap-5">
+                    <div class="w-11 h-11 p-2 rounded-3xl bg-green bg-opacity-30 cursor-pointer social"><a href="mailto:yassinkatungi67@gmail.com"><img src="/svgs/crawl-mail.svg" class="w-full"></a></div>
+                    <div class="w-11 h-11 p-2 rounded-3xl bg-green bg-opacity-30 cursor-pointer social"><a href="https://www.twitter.com/crawlgrocery"><img src="/svgs/crawl-twitter.svg" class="w-full"></a></div>
+                    <div class="w-11 h-11 p-2 rounded-3xl bg-green bg-opacity-30 cursor-pointer social"><a href="https://www.whatsapp.com/crawlgrocery"><img src="/svgs/crawl-whatsapp.svg" class="w-full"></a></div>
+                </div>
+            </div>
+        </div>
+        <img src="/images/footer.png" class="absolute w-72 img md:w-80">
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
